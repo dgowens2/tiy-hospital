@@ -18,4 +18,6 @@ public abstract class HospitalDoctor extends Person implements Doctor {
     public void setCollege(String college) {
         this.college = college;
     }
+
+
 }
