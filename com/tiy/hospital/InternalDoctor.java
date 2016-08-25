@@ -3,12 +3,11 @@ package com.tiy.hospital;
 import java.util.Scanner;
 
 /**
- * Created by DTG2 on 08/17/16.
+ * Created by DTG2 on 08/24/16.
  */
+public class InternalDoctor extends HospitalDoctor{
 
-public class Pulmonologist extends HospitalDoctor {
-
-    public Pulmonologist (String firstName, String lastName, String college) {
+    public InternalDoctor(String firstName, String lastName, String college) {
         super(firstName, lastName, college);
     }
 
@@ -33,7 +32,6 @@ public class Pulmonologist extends HospitalDoctor {
         } else {
             System.out.println("I didn't understand your response.\nWill you state it again?");
         }
-
         return null;
     }
 
@@ -68,8 +66,4 @@ public class Pulmonologist extends HospitalDoctor {
         myRunner.goodEndProgram();
     }
 
-    public boolean operate(Patient patient) {
-        patient.setSick(false);
-        return true; // successfull operation
-    }
 }
